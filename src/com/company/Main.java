@@ -8,6 +8,12 @@ public class Main {
     // с параметрами, чтобы передать точки.
 
     public static void main(String[] args) {
-	// write your code here
+        //create three Points()
+        //send Points() to Triangle()
+        int[] a1 = {3, 2}; //x1, y1
+        int[] a2 = {7, 5}; //x2, y2
+        int[] a3 = {0, 0};
+        Triangle triangle = new Triangle();
+        System.out.println(triangle.calculate(a1, a2, a3));
     }
 }
