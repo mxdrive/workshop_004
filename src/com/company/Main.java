@@ -10,10 +10,9 @@ public class Main {
     public static void main(String[] args) {
         //create three Points()
         //send Points() to Triangle()
-        int[] a1 = {3, 2}; //x1, y1
-        int[] a2 = {7, 5}; //x2, y2
-        int[] a3 = {0, 0};
-        Triangle triangle = new Triangle();
-        System.out.println(triangle.calculate(a1, a2, a3));
+
+        Triangle triangle = new Triangle(new Point(3, 2), new Point(7, 5), new Point(0, 0));
+        System.out.println(triangle.calculate());
+        triangle.showPoints();
     }
 }
